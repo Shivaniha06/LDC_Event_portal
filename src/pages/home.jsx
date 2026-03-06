@@ -75,7 +75,7 @@ export default function Home() {
 
           <div className="mt-8 flex items-center justify-center gap-8 text-gray-400 text-[11px] font-mono tracking-widest bg-black/40 py-2 px-6 rounded-lg border border-white/5">
             <span className="flex items-center gap-2">📅 26 JAN & 03 FEB 2026</span>
-            <span className="flex items-center gap-2 text-blue-300">📍 APZLAB, Thiagarajar College</span>
+            <span className="flex items-center gap-2 text-blue-300">📍 APZLAB, Lady Doak College</span>
           </div>
         </motion.div>
 
@@ -84,48 +84,59 @@ export default function Home() {
         {/* --- STAT CARDS --- */}
 
         {/* LEFT TOP: Submissions */}
-        <StatCard
-          position="left-[8%] top-[30%]"
-          delay={0.2}
-          borderColor="border-orange-500/40"
-          icon={<span className="text-orange-500">⚡</span>}
-          label="Total Submissions"
-          value={1819}
-          isCount
-        />
+       {/* STAT CARDS - LEFT SIDE (Gold/Yellow Text) */}
+        {/* STAT CARDS - LEFT SIDE (Gold/Yellow Text) */}
+<StatCard
+  position="left-[8%] top-[30%]"
+  glowColor="rgba(249, 115, 22, 0.5)" 
+  textColor="text-[#FACC15]" // Vivid Gold
+  align="items-end text-right"
+  delay={0.2}
+  borderColor="border-orange-500/50"
+  icon={<span className="text-orange-500 text-3xl">⚡</span>}
+  label="Total Submissions"
+  value={1819}
+  isCount
+/>
 
-        {/* LEFT BOTTOM: Days */}
-        <StatCard
-          position="left-[8%] bottom-[15%]"
-          delay={0.4}
-          borderColor="border-blue-500/40"
-          icon={<span className="text-blue-400">📅</span>}
-          label="Days Hackathon"
-          value={10}
-        />
+<StatCard
+  position="left-[8%] bottom-[15%]"
+  glowColor="rgba(59, 130, 246, 0.5)"
+  textColor="text-[#FACC15]"
+  align="items-end text-right"
+  delay={0.4}
+  borderColor="border-blue-500/50"
+  icon={<span className="text-blue-400 text-3xl">📅</span>}
+  label="Days Hackathon"
+  value={10}
+/>
 
-        {/* RIGHT TOP: Teams */}
-        <StatCard
-          position="right-[8%] top-[30%]"
-          delay={0.6}
-          borderColor="border-purple-500/40"
-          icon={<span className="text-purple-500">👥</span>}
-          label="Teams Joined"
-          value={76}
-          isCount
-        />
+{/* STAT CARDS - RIGHT SIDE (Blue Text) */}
+<StatCard
+  position="right-[8%] top-[30%]"
+  glowColor="rgba(168, 85, 247, 0.5)"
+  textColor="text-[#60A5FA]" // Electric Blue
+  align="items-start text-left"
+  delay={0.6}
+  borderColor="border-purple-500/50"
+  icon={<span className="text-purple-500 text-3xl">👥</span>}
+  label="Teams Joined"
+  value={76}
+  isCount
+/>
 
-        {/* RIGHT BOTTOM: Winners */}
-        <StatCard
-          position="right-[8%] bottom-[15%]"
-          delay={0.8}
-          borderColor="border-yellow-500/40"
-          icon={<span className="text-yellow-500">🏆</span>}
-          label="Final Winners"
-          value={3}
-        />
+<StatCard
+  position="right-[8%] bottom-[15%]"
+  glowColor="rgba(234, 179, 8, 0.5)"
+  textColor="text-[#60A5FA]"
+  align="items-start text-left"
+  delay={0.8}
+  borderColor="border-yellow-500/50"
+  icon={<span className="text-yellow-500 text-3xl">🏆</span>}
+  label="Final Winners"
+  value={3}
+/>
       </section>
-
     
     </>
   );

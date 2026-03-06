@@ -6,6 +6,10 @@ import About from "./pages/About";
 import Teams from "./pages/team";
 import Mentor from "./pages/mentor";
 import Contact from "./pages/contact";
+import HackathonStats from "./pages/HackthonStats"
+import ProblemStatements from "./pages/ProblemStatements";
+import Judges from "./pages/Judges";
+import HackathonTimeline from "./pages/HackathonTimeline";
 
 function App() {
   return (
@@ -21,8 +25,21 @@ function App() {
           <About />
         </section>
 
+        <section id="HackthonStats">
+          <HackathonStats />
+        </section>
+        <section id="HackathonTimeline">
+          <HackathonTimeline/></section>
+
+        <section id="ProblemStatements">
+          <ProblemStatements />
+        </section>
+
         <section id="teams">
           <Teams />
+        </section>
+        <section id="judges">
+          <Judges/>
         </section>
 
         <section id="mentor">
